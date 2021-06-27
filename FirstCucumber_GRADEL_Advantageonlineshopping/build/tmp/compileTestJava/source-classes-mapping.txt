@@ -1,0 +1,4 @@
+com/advantageonlineshopping/automation/runners/RegisterNewUserRunners.java
+ com.advantageonlineshopping.automation.runners.RegisterNewUserRunners
+com/advantageonlineshopping/automation/stepdefinitions/RegisterNewUserStepDefinitions.java
+ com.advantageonlineshopping.automation.stepdefinitions.RegisterNewUserStepDefinitions
