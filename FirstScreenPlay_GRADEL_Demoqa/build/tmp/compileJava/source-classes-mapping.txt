@@ -1,0 +1,8 @@
+com/demoqa/automation/interactions/OpenBrowser.java
+ com.demoqa.automation.interactions.OpenBrowser
+com/demoqa/automation/userinterfaces/PracticeFormPage.java
+ com.demoqa.automation.userinterfaces.PracticeFormPage
+com/demoqa/automation/models/DataInjection.java
+ com.demoqa.automation.models.DataInjection
+com/demoqa/automation/taks/FillAllFields.java
+ com.demoqa.automation.taks.FillAllFields
