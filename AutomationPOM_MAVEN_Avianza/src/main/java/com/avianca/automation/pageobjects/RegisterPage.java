@@ -13,10 +13,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
 import java.sql.Time;
+import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertEquals;
 
-@DefaultUrl("https://www.avianca.com")
+@DefaultUrl("https://www.avianca.com/co/es/")
 
 public class RegisterPage extends PageObject {
     DataInjection dataInjection = new DataInjection();
@@ -37,25 +38,25 @@ public class RegisterPage extends PageObject {
     public By phoneInput = By.xpath("//input[@autocomplete='tel-national']");
     public By termsCheckBox = By.xpath("(//div[@class='mat-checkbox-inner-container'])[1]");
     public By saveClick = By.xpath("//button[@aria-label='Guardar y continuar']");
-    public By buyClick = By.xpath("(//button[@class='btn-primary continue-btn'])[2]");
-    public By detailValidation = By.xpath("//button[contains(text(), 'Detalles de reserva')]");
+    public By buyClick = By.xpath("//button[@class='btn-primary continue-btn' and @id='continue-btn-footer-static']");
+    public By detailValidation = By.xpath("(//button[@class='link-item'])[1]");
     public By nameValidation = By.xpath("(//div[@class='name ng-star-inserted'])[last()]");
-    public By emailValidation = By.xpath("//div[contains (text(), 'asar')]");
-    //public By phoneValidation = By.xpath("//div[contains (text(), '+57 320')] ");
+    public By emailValidation = By.xpath("//div[contains (text(), '@')]");
+    public By phoneValidation = By.xpath("//div[contains (text(), '+57 3')] ");
 
     public RegisterPage() throws IOException {
     }
-    public void clickReserve(){
+
+    public void clickReserve() throws InterruptedException {
         getDriver().findElement(reserveClick).click();
     }
 
     public void clickOneWay() throws InterruptedException {
-        //Times.waitImplicit(getDriver());
         getDriver().findElement(oneWayClick).click();
+        WebDriverWait ewait = new WebDriverWait(getDriver(), 20);
+        ewait.until(ExpectedConditions.elementToBeClickable(oneWayClick));
     }
     public void sendSelectOrigin() throws InterruptedException, IOException {
-        //Times.waitImplicit(getDriver());
-        //Times.waitExplicit(getDriver(),selectOriginInput);
         getDriver().findElement(selectOriginInput).click();
         getDriver().findElement(selectOriginInput).sendKeys(dataInjection.getOrigin());
         getDriver().findElement(selectOriginInput).sendKeys(Keys.ARROW_DOWN);
@@ -68,15 +69,17 @@ public class RegisterPage extends PageObject {
     }
     public void clickSelectDate() throws InterruptedException {
         getDriver().findElement(calendarClick).click();
-        Times.waitFor(2000);
+        WebDriverWait ewait = new WebDriverWait(getDriver(), 10);
+        ewait.until(ExpectedConditions.elementToBeClickable(calendarClick));
         Javascript.clickJS(getDriver(),selectDay);
-        Times.waitFor(2000);
+        Times.waitFor(1000);
     }
     public void clickButtonGo() throws InterruptedException {
         getDriver().findElement(goButton).click();
         Times.waitFor(2000);
     }
     public void clickTicket () throws InterruptedException {
+        getDriver().manage().timeouts().implicitlyWait( 10, TimeUnit.SECONDS);
         getDriver().findElement(selectFlightClick).click();
         Times.waitFor(2000);
         getDriver().findElement(selectPriceClick).click();
@@ -85,6 +88,7 @@ public class RegisterPage extends PageObject {
         Times.waitFor(2000);
     }
     public void sendDataTicket() throws InterruptedException, IOException {
+        getDriver().manage().timeouts().pageLoadTimeout( 10,TimeUnit.SECONDS);
         getDriver().findElement(nameInput).sendKeys(dataInjection.getName());
         Times.waitFor(2000);
         getDriver().findElement(lastNameInput).sendKeys(dataInjection.getLastName());
@@ -98,19 +102,16 @@ public class RegisterPage extends PageObject {
         Javascript.clickJS(getDriver(),termsCheckBox);
         Times.waitFor(2000);
         Javascript.clickJS(getDriver(),saveClick);
-        Times.waitFor(10000);
+        Times.waitFor(3000);
         Javascript.clickJS(getDriver(),buyClick);
-        Times.waitFor(10000);
+        getDriver().manage().timeouts().pageLoadTimeout( 20,TimeUnit.SECONDS);
         getDriver().findElement(detailValidation).click();
-        Times.waitFor(2000);
+        getDriver().manage().timeouts().implicitlyWait( 10, TimeUnit.SECONDS);
     }
     public void dataValidations() throws InterruptedException, IOException {
         assertEquals(getDriver().findElement(nameValidation).getText(), dataInjection.getName()+ " " + dataInjection.getLastName());
         Times.waitFor(2000);
         assertEquals(getDriver().findElement(emailValidation).getText(), dataInjection.getEmail());
-        Times.waitFor(5000);
-        //assertEquals(getDriver().findElement(phoneValidation).getText(), "+57 "+ dataInjection.getPhone());
-        //Times.waitFor(2000);
+        Times.waitFor(2000);
     }
 }
-

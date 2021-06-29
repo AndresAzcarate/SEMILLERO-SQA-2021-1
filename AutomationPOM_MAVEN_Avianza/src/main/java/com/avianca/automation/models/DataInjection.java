@@ -1,14 +1,21 @@
 package com.avianca.automation.models;
 import com.avianca.automation.utils.Excel;
-
+import java.lang.Math;
 
 import java.io.IOException;
 
 public class DataInjection {
 
-
     private String origin, destination, date, name, lastname, email, phone, filePath, sheetName;
-    private int fil, colEmail, colName, colLastName, colOrigin, colDestination, colDate, colPhone;
+    private int fil;
+    private int colEmail;
+    private int colName;
+    private int colLastName;
+    private int colOrigin;
+    private int colDestination;
+    private int colDate;
+    private int colPhone;
+    private String phoneInt;
 
     public int getColOrigin() {
         colOrigin=0;
@@ -45,15 +52,15 @@ public class DataInjection {
     }
     */
     public int getFil(){
-        fil = 0;
+        fil = 2;
         return fil;
     }
     public String getFilePath() {
-        filePath = "C:\\Users\\Administrador\\Documents\\Test.xlsx";
+        filePath = "Resources/Test.xlsx";
         return filePath;
     }
     public String getSheetName() {
-        sheetName = "dataInjection";
+        sheetName = "Data";
         return sheetName;
     }
     public String getOrigin() throws IOException {
@@ -81,7 +88,9 @@ public class DataInjection {
         return email;
     }
     public String getPhone () throws IOException {
-        phone= Excel.getCellValue(getFilePath(), getSheetName(),getFil(), getColPhone());
+        phoneInt = Excel.getCellValue(getFilePath(), getSheetName(),getFil(), getColPhone());
+        phone = String.valueOf(phoneInt);
         return phone;
     }
 }
+
