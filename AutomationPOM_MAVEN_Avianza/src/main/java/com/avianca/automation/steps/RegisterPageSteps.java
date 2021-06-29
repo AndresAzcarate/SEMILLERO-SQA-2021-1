@@ -3,11 +3,8 @@ package com.avianca.automation.steps;
 import com.avianca.automation.pageobjects.RegisterPage;
 import com.avianca.automation.utils.Times;
 import net.thucydides.core.annotations.Step;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 public class RegisterPageSteps {
 

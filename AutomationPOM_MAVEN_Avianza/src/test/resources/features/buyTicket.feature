@@ -4,7 +4,7 @@ Feature: Buy ticket
   I search Avianca Airlines
   To be able to buy a ticket
 
-  @smokeTest
+  @regression
   Scenario: Buy Successful
     Given that a web user wants to access Avianca Airlines
     When i have filled in the necessary fields

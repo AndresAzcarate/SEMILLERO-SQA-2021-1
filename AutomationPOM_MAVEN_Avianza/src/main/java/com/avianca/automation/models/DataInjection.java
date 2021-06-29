@@ -1,6 +1,5 @@
 package com.avianca.automation.models;
 import com.avianca.automation.utils.Excel;
-import java.lang.Math;
 
 import java.io.IOException;
 
@@ -45,22 +44,16 @@ public class DataInjection {
         colDate=6;
         return colDate;
     }
-    /*
     public int getFil(){
-        fil = 2;
-        return (int)(Math.random()*2);
-    }
-    */
-    public int getFil(){
-        fil = 2;
+        fil = 0;
         return fil;
     }
     public String getFilePath() {
-        filePath = "Resources/Test.xlsx";
+        filePath = "resources/Test.xlsx";
         return filePath;
     }
     public String getSheetName() {
-        sheetName = "Data";
+        sheetName = "dataInjection";
         return sheetName;
     }
     public String getOrigin() throws IOException {
@@ -93,4 +86,3 @@ public class DataInjection {
         return phone;
     }
 }
-

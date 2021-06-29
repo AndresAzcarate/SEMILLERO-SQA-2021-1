@@ -1,7 +1,6 @@
 package com.avianca.automation.pageobjects;
 
 import com.avianca.automation.models.DataInjection;
-import com.avianca.automation.utils.Excel;
 import com.avianca.automation.utils.Javascript;
 import com.avianca.automation.utils.Times;
 import net.serenitybdd.core.pages.PageObject;
@@ -12,7 +11,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
-import java.sql.Time;
 import java.util.concurrent.TimeUnit;
 
 import static org.junit.Assert.assertEquals;

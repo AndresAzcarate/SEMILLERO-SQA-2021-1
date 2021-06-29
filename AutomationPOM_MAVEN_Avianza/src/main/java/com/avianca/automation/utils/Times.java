@@ -9,7 +9,7 @@ public class Times {
         Thread.sleep(millis);
     }
     public static void waitExplicit(WebDriver driver, By by){
-        //Explict Wait
+
         WebDriverWait ewait = new WebDriverWait(driver, 10);
         ewait.until(ExpectedConditions.elementToBeSelected(by));
     }

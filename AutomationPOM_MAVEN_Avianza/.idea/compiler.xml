@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="AviancaAutomation" />
+        <module name="AutomatizacionPOM_MAVEN_Avianca" />
       </profile>
     </annotationProcessing>
   </component>
