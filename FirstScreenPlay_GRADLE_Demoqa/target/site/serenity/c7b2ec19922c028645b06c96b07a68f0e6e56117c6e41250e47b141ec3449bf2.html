@@ -98,7 +98,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 27-06-2021 17:35</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 10-11-2021 17:08</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -138,9 +138,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">
+                                <span class="error-color">
                                     Full practice form Excel
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -210,22 +210,22 @@
                     <th width="65">                        &nbsp;
                     </th>
 
-                        <th width="%" class="step-description-column greentext">
+                        <th width="%"
+                            class="step-description-wide-column greentext">
                             Steps
                         </th>
-                        <th width="150" class="greentext">Screenshots</th>
                     <th width="130" class="greentext">Outcome</th>
                     <th width="80" class="greentext"><i title="Duration" class="far fa-clock"></i></th>
                 </tr>
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-ERROR">
                     <td width="50" class="step-icon">
                         <a name="0"/>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block">
-                                <i class="fa fa-plus-square-o imgstepSection0 success-icon"
+                                <i class="fa fa-plus-square-o imgstepSection0 error-icon"
                                    style="margin-left: 20px; float:left;  padding-right:5px"></i>
                             </a>
                     </td>
@@ -241,27 +241,18 @@
                             </span>
                         </div>
                     </td>
-                        <td width="160" class="SUCCESS-text">
-
-                                <a href="c7b2ec19922c028645b06c96b07a68f0e6e56117c6e41250e47b141ec3449bf2_screenshots.html#screenshots?screenshot=2">
-                                    <img src="2b42fdab75ccbdc440f93b8dc3d96ec928561df85a7ae0377ee515a37dc5a194.png"
-                                         href="2b42fdab75ccbdc440f93b8dc3d96ec928561df85a7ae0377ee515a37dc5a194.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">6.5s</span></td>
+                    <td width="100"><span class="top-level-step">ERROR</span></td>
+                    <td width="100"><span class="top-level-step">2.18s</span></td>
                 </tr>
                 <tr>
                     <td colspan="5">
                         <table id="stepSection0" style="display:none; width:100%">
 
-                <tr class="test-SUCCESS">
+                <tr class="test-ERROR">
                     <td width="50" class="step-icon">
                         <a name="0-0"/>
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                                  class="nested-group-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -272,27 +263,63 @@
                             </span>
                         </div>
                     </td>
-                        <td width="160" class="SUCCESS-text">
-
-                                <a href="c7b2ec19922c028645b06c96b07a68f0e6e56117c6e41250e47b141ec3449bf2_screenshots.html#screenshots?screenshot=1">
-                                    <img src="2b42fdab75ccbdc440f93b8dc3d96ec928561df85a7ae0377ee515a37dc5a194.png"
-                                         href="2b42fdab75ccbdc440f93b8dc3d96ec928561df85a7ae0377ee515a37dc5a194.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">6.49s</span></td>
+                    <td width="100"><span class="nested-group-step">ERROR</span></td>
+                    <td width="100"><span class="nested-group-step">2.11s</span></td>
                 </tr>
+                    <tr class="test-ERROR">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="3" class="error-message-cell">
+
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">net.thucydides.core.webdriver.DriverConfigurationError: Could not instantiate class org.openqa.selenium.chrome.ChromeDriver</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-2""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-2">
+            <div class="card">
+                <div class="card-header">
+                    <h4>net.thucydides.core.webdriver.DriverConfigurationError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.demoqa.automation.interactions.OpenBrowser.performAs(OpenBrowser.java:15)<br />com.demoqa.test.stepdefinitions.PracticeFormStepDefinitions.thatAWebUserWantsToPracticeTheTextFormInDemoqa(PracticeFormStepDefinitions.java:29)<br />cucumber.runner.Runner.runPickle(Runner.java:80)<br /></pre>
+                    </div>
+
+                    <h4>
+                        Caused by: net.thucydides.core.webdriver.DriverConfigurationError
+                    </h4>
+                    <div>
+                            <pre>Could not instantiate new WebDriver instance of type class org.openqa.selenium.chrome.ChromeDriver (session not created: This version of ChromeDriver only supports Chrome version 91<br>Current browser version is 95.0.4638.69 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe<br>Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'<br>System info: host: 'DESKTOP-TRG7AVV', ip: '192.168.1.131', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'<br>Driver info: driver.version: ProvideNewDriver<br>remote stacktrace: Backtrace:<br>&nbsp; &nbsp; &nbsp; &nbsp;Ordinal0 [0x01062DB3+2502067]<br>&nbsp; &nbsp; &nbsp; &nbsp;Ordinal0 [0x00FFC5B1+2082225]<br>&nbsp; &nbsp; &nbsp; &nbsp;Ordinal0 [0x00F02498+1057944]<br>&nbsp; &nbsp; &nbsp; &nbsp;Ordinal0 [0x00F205DA+1181146]<br>&nbsp; &nbsp; &nbsp; &nbsp;Ordinal0 [0x00F1C43C+1164348]<br>&nbsp; &nbsp; &nbsp; &nbsp;Ordinal0 [0x00F19C73+1154163]<br>&nbsp; &nbsp; &nbsp; &nbsp;Ordinal0 [0x00F49A22+1350178]<br>&nbsp; &nbsp; &nbsp; &nbsp;Ordinal0 [0x00F4967A+1349242]<br>&nbsp; &nbsp; &nbsp; &nbsp;Ordinal0 [0x00F45BEB+1334251]<br>&nbsp; &nbsp; &nbsp; &nbsp;Ordinal0 [0x00F22174+1188212]<br>&nbsp; &nbsp; &nbsp; &nbsp;Ordinal0 [0x00F23009+1191945]<br>&nbsp; &nbsp; &nbsp; &nbsp;GetHandleVerifier [0x011DEC5C+1511084]<br>&nbsp; &nbsp; &nbsp; &nbsp;GetHandleVerifier [0x01288522+2205554]<br>&nbsp; &nbsp; &nbsp; &nbsp;GetHandleVerifier [0x010E3393+480739]<br>&nbsp; &nbsp; &nbsp; &nbsp;GetHandleVerifier [0x010E2579+477129]<br>&nbsp; &nbsp; &nbsp; &nbsp;Ordinal0 [0x01001E5D+2104925]<br>&nbsp; &nbsp; &nbsp; &nbsp;Ordinal0 [0x010063F8+2122744]<br>&nbsp; &nbsp; &nbsp; &nbsp;Ordinal0 [0x01006537+2123063]<br>&nbsp; &nbsp; &nbsp; &nbsp;Ordinal0 [0x0100EE53+2158163]<br>&nbsp; &nbsp; &nbsp; &nbsp;BaseThreadInitThunk [0x7604FA29+25]<br>&nbsp; &nbsp; &nbsp; &nbsp;RtlGetAppContainerNamedObjectPath [0x777B7A9E+286]<br>&nbsp; &nbsp; &nbsp; &nbsp;RtlGetAppContainerNamedObjectPath [0x777B7A6E+238]<br>). See below for more details.</pre>
+                        <pre>com.demoqa.automation.interactions.OpenBrowser.performAs(OpenBrowser.java :15)<br />com.demoqa.test.stepdefinitions.PracticeFormStepDefinitions.thatAWebUserWantsToPracticeTheTextFormInDemoqa(PracticeFormStepDefinitions.java :29)<br />cucumber.runner.Runner.runPickle(Runner.java :80)<br /></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                        </td>
+                    </tr>
 
                         </table>
                     </td>
                 <tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-SKIPPED">
                     <td width="50" class="step-icon">
                         <a name="1"/>
                             <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                                  class="top-level-icon"><a href='##beforetable'><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></a></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -303,23 +330,14 @@
                             </span>
                         </div>
                     </td>
-                        <td width="160" class="SUCCESS-text">
-
-                                <a href="c7b2ec19922c028645b06c96b07a68f0e6e56117c6e41250e47b141ec3449bf2_screenshots.html#screenshots?screenshot=3">
-                                    <img src="2b42fdab75ccbdc440f93b8dc3d96ec928561df85a7ae0377ee515a37dc5a194.png"
-                                         href="2b42fdab75ccbdc440f93b8dc3d96ec928561df85a7ae0377ee515a37dc5a194.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">0.02s</span></td>
+                    <td width="100"><span class="top-level-step">SKIPPED</span></td>
+                    <td width="100"><span class="top-level-step">0s</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-SKIPPED">
                     <td width="50" class="step-icon">
                         <a name="2"/>
                             <span style="margin-left: 20px; margin-right: 5px;"
-                                  class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a></span>
+                                  class="top-level-icon"><a href='##beforetable'><i class='fa fa-fast-forward skipped-icon ' title='SKIPPED'></i></a></span>
                     </td>
                     <td>
                         <div class="step-description">
@@ -330,22 +348,13 @@
                             </span>
                         </div>
                     </td>
-                        <td width="160" class="SUCCESS-text">
-
-                                <a href="c7b2ec19922c028645b06c96b07a68f0e6e56117c6e41250e47b141ec3449bf2_screenshots.html#screenshots?screenshot=4">
-                                    <img src="2b42fdab75ccbdc440f93b8dc3d96ec928561df85a7ae0377ee515a37dc5a194.png"
-                                         href="2b42fdab75ccbdc440f93b8dc3d96ec928561df85a7ae0377ee515a37dc5a194.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">0.28s</span></td>
+                    <td width="100"><span class="top-level-step">SKIPPED</span></td>
+                    <td width="100"><span class="top-level-step">0s</span></td>
                 </tr>
-                <tr class="test-SUCCESS">
-                        <td colspan="3"></td>
-                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>6.81s</em></span></td>
+                <tr class="test-ERROR">
+                        <td colspan="2"></td>
+                    <td width="100"><span class="top-level-step"><em>ERROR</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>2.22s</em></span></td>
                 </tr>
 
             </table>

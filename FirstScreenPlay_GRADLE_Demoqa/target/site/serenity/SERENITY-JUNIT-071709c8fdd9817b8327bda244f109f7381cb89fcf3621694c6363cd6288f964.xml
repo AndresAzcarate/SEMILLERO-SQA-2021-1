@@ -1,1 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Practice Form" skipped="0" tests="2" time="20.41" timestamp="2021-06-27 05:34:57"><testcase name="Full practice form"/><testcase name="Full practice form Excel"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="2" failures="0" name="Practice Form" skipped="0" tests="2" time="6.06" timestamp="2021-11-10 05:08:40"><testcase name="Full practice form"><error message="Could not instantiate class org.openqa.selenium.chrome.ChromeDriver" type="net.thucydides.core.webdriver.DriverConfigurationError">Could not instantiate class org.openqa.selenium.chrome.ChromeDriver</error><system-err>Could not instantiate class org.openqa.selenium.chrome.ChromeDriver&#13;
+com.demoqa.automation.interactions.OpenBrowser.performAs(OpenBrowser.java:15)&#13;
+com.demoqa.test.stepdefinitions.PracticeFormStepDefinitions.thatAWebUserWantsToPracticeTheTextFormInDemoqa(PracticeFormStepDefinitions.java:29)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase><testcase name="Full practice form Excel"><error message="Could not instantiate class org.openqa.selenium.chrome.ChromeDriver" type="net.thucydides.core.webdriver.DriverConfigurationError">Could not instantiate class org.openqa.selenium.chrome.ChromeDriver</error><system-err>Could not instantiate class org.openqa.selenium.chrome.ChromeDriver&#13;
+com.demoqa.automation.interactions.OpenBrowser.performAs(OpenBrowser.java:15)&#13;
+com.demoqa.test.stepdefinitions.PracticeFormStepDefinitions.thatAWebUserWantsToPracticeTheTextFormInDemoqa(PracticeFormStepDefinitions.java:29)&#13;
+cucumber.runner.Runner.runPickle(Runner.java:80)&#13;
+</system-err></testcase></testsuite>

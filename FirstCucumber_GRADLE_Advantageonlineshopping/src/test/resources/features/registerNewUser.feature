@@ -4,6 +4,9 @@ Feature: Register new user
   I want to register in advantage shopping
   To be able to buy a product
 
+  Background: Test
+    Given that test
+
   Scenario: Register successful
     Given That a web user wants to register in advantage shopping online
     When He fills all the requested fields
